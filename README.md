@@ -15,7 +15,9 @@ In our ocean, you'll see bottled messages drifting ashore. To catch one, simply 
 To write your own message, simply grab your bottle and paper at the top right corner of the screen, labeled "Write a message?", and space to write your message will pop up before you. Feel free to say anything on your mind (but please no profanity!), whether you want to share a story, release your frustration, or spill out bottled secrets. Rest assured, all messages will drift across our ocean anonymously.
 
 To check on your bottles, click the "My Bottles" icon above the ocean. Here, you'll find a list of all messages you've ever written, and whether they've been picked up and replied to by another person. Get ready to laugh, smile, and/or feel consoled when you read the replies to the bottles you've thrown out to sea.
+
 And that's about it! Click on the "Instructions" icon anytime to re-read these instructions, and change your password or log out by clicking on the icons at the top of the screen.
+
 Note: Please use the Google Chrome browser to view our project.
 
 Design for oceanofmessages.com
@@ -32,6 +34,3 @@ To pick up a message, it inserts an image of a fishing net, and utilizes ajax to
 To throw in a message, it inserts an image of a bottled message, and appends html for a modal window to pop up when that image is clicked. This modal window includes a form to write and submit a message. The submit button uses ajax/jQuery function to call the throwin.php file, passing the message written to it. Throwin.php inserts the message into our SQL database.
 
 The oceanofmessages.com folder also contains the bottle.php file, which selects for all the rows of our messages and passes the number, message, and reply fields of a row to the bottle.php template. This template then displays all of these fields for the logged in user with an html table.
-The doc.php file, which renders the doc.php template, contains our documentation for the project and instructions for the website.
-Like CS50 Finance, there are also files to log in, register, log out, and change your password.
-Our project is hosted by DreamHost and is live on the web for anyone to register!
