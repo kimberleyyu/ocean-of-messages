@@ -1,0 +1,283 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+
+body
+{
+    background-color: #E7F1F3;
+    font-family: "Century Gothic", Arial;
+    font-size: large;
+}
+
+p
+{
+/*    text-align: left; */
+    font-family: "Century Gothic", Arial;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#ocean
+{
+    width: 1150px;
+    height: 650px;
+    background-image:url("/img/oceangif.gif");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#test
+{
+    width: 206px;
+    height: 139px;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+#test2
+{
+    width: 156px;
+    height: 139px;
+    position: relative;
+    left: 960px;
+    top: -75px;
+}
+
+#audio
+{
+    width: 250px;
+    height: 1px;
+    position: relative;
+    left: 450px;
+    top: 15px;
+}
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#login
+{
+    text-align: center;
+    top: 50px;
+    margin: 25px auto;
+    position: relative;
+    width: 900px;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+    
+    font-size: large;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+#bottles
+{
+    text-align: left;
+    
+}
+
+#bottles th:first-child
+{
+    /* don't set width, will expand*/
+}
+#bottles th:first-child + th
+{
+    width: 550px;
+}
+#bottles th:first-child + th + th
+{
+    width: 550px;
+}
+
+#top
+{
+    height: 150px;
+    padding: 10px;
+    background-color: #e6e6e6;
+}
+
+#header-left
+{
+    width: 50%;
+    float: left;
+    height: 150px;
+}
+
+#header_img
+{
+    float: left;
+}
+
+#header-right
+{
+    width: 50%;
+    float: right;
+    position: relative;
+    height: 150px;
+}
+
+.navbar
+{
+    height: 80px;
+    position: relative;
+}
+
+.icon
+{
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	color:#666;
+	font-family: "Century Gothic", Arial;
+	font-size:14px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:20px;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+table th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+table th:first-child {
+	text-align: left;
+	padding-left:20px;
+}
+table tr:first-child th:first-child {
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+table tr:first-child th:last-child {
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+table tr {
+	text-align: left;
+	padding-left:20px;
+}
+table td:first-child {
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+table td {
+	padding:18px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+table tr.even td {
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+table tr:last-child td {
+	border-bottom:0;
+}
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child {
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td {
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+#name
+{
+    position: relative;
+    float: right;
+    font-family: Century Gothic;
+    font-size: 18px;
+}
+
+#background
+{
+    width: 1150px;
+    height: 650px;
+    background-image:url("/img/oceangif.gif");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
